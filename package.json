@@ -9,7 +9,7 @@
     "init": "npm install",
     "install": "bower install",
     "start": "node src/server/app.js",
-	"postinstall": "gulp serve-build", 
+	"postinstall": "gulp wiredep", 
     "test": "gulp test"
   },
   "dependencies": {
