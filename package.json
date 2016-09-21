@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "init": "npm install",
+	"postinstall": "gulp build",
     "install": "bower install",
     "start": "node src/server/app.js",
     "test": "gulp test"
@@ -13,10 +14,8 @@
     "bower": "^1.7.9",
     "express": "^4.9.3",
     "morgan": "^1.1.1",
-    "serve-favicon": "^2.0.1"
-  },
-  "devDependencies": {
-    "browser-sync": "~2.11.2",
+    "serve-favicon": "^2.0.1",
+	 "browser-sync": "~2.11.2",
     "chai": "^3.1.0",
     "chai-as-promised": "^5.1.0",
     "chalk": "^1.1.0",
@@ -77,5 +76,8 @@
     "sinon-chai": "^2.6.0",
     "wiredep": "^2.2.2",
     "yargs": "^3.15.0"
+  },
+  "devDependencies": {
+   
   }
 }
